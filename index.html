@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Quick Start - Leaflet</title>
+	<title>Mapa Elementos Itaperuna</title>
 	
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 
@@ -41,15 +41,21 @@
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
 
-	var marker = L.marker([-21.20694, -41.88932]).addTo(map);
-	function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
-}
+	
+
+	var ico-praca = L.icon({
+    	iconUrl: 'ico_praça.png',
+	iconSize: [38, 95],
+    	iconAnchor: [22, 94],
+   	popupAnchor: [-3, -76],
+		});
+	
+	var marker = L.marker([-21.20694, -41.88932]{icon: ico-praca}).addTo(map);
+});
+
 
 map.on('click', onMapClick);
+
 </script>
 
 
