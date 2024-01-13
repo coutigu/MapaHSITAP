@@ -1,64 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<base target="_top">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Mapa Elementos Itaperuna</title>
-	
-	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <meta name="author" content="haran" />
+    <meta name="generator" content="author" />
 
-	<style>
-		html, body {
-			height: 100%;
-			margin: 0;
-		}
-		.leaflet-container {
-			height: 400px;
-			width: 600px;
-			max-width: 100%;
-			max-height: 100%;
-		}
-	</style>
+    <!-- Navigational metadata for large websites (an accessibility feature): -->
+    <link rel="top"      href="./index.html" title="Homepage" />
+    <link rel="up"       href="./index.html" title="Up" />
+    <link rel="first"    href="./index.html" title="First page" />
+    <link rel="previous" href="./index.html" title="Previous page" />
+    <link rel="next"     href="./index.html" title="Next page" />
+    <link rel="last"     href="./index.html" title="Last page" />
+    <link rel="toc"      href="./index.html" title="Table of contents" />
+    <link rel="index"    href="./index.html" title="Site map" />
 
-	
+    <link rel="stylesheet" type="text/css" href="sinorca-screen.css" media="screen" title="Sinorca (screen)" />
+    <link rel="stylesheet alternative" type="text/css" href="sinorca-screen-alt.css" media="screen" title="Sinorca (alternative)" />
+    <link rel="stylesheet" type="text/css" href="sinorca-print.css" media="print" />
+
+    <title>ITAPERUNA - MAPA A TERRA DA PROMISSÃO</title>
+    <style type="text/css">
+<!--
+.style1 {color: #C1FF64}
+-->
+    </style>
 </head>
-<body>
 
+  <body>
+    <!-- For non-visual user agents: -->
+      <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
 
+    <!-- ##### Header ##### -->
 
-<div id="map" style="width: 600px; height: 400px;"></div>
-<script>
+    <div id="header">
+      <div class="superHeader">
+        
+    <div class="left"> <span class="doNotDisplay">Related sites:</span> <a href="https://github.com/coutigu">Meu Git</a> | <a href="./index.html">Link 2</a> </div>
+    <div class="right"> <span class="doNotDisplay">More related sites:</span> 
+      <a href="./index.html"></a> | <a href="./index.html"></a> | 
+      <a href="./index.html"></a> | <a href="./index.html"></a> | 
+      <a href="./index.html"></a> </div>
+      </div>
 
-	const map = L.map('map').setView([-21.20694, -41.88932], 13);
+      <div class="midHeader">
+        <h1 class="headerTitle">ITAPERUNA - MAPA HISTÓRICO</h1>
+      </div>
 
-	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		maxZoom: 19,
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-	}).addTo(map);
+      <div class="subHeader">
+        <span class="doNotDisplay">Navigation:</span>
+        <a href="./index.html">Início</a> |
+        <a href="./mapa.html" class="highlight">Mapa</a> |
+       
+      </div>
+    </div>
 
-	
+    <!-- ##### Side Bar ##### -->
 
-	var ico-praca = L.icon({
-    	iconUrl: 'ico_praça.png',
-	iconSize: [38, 95],
-    	iconAnchor: [22, 94],
-   	popupAnchor: [-3, -76],
-		});
-	
-	var marker = L.marker([-21.20694, -41.88932], {icon: ico-praca}).addTo(map);
-});
+    <div id="side-bar">
+      <div>
+        <p class="sideBarTitle">Navigate this page</p>
+        <ul>
+          <li><a href="mapa.html">&rsaquo; Mapa</a></li>
+          <li><a href="#cross-browser" title="Improved cross-browser compatibility">&rsaquo; Terra da Promissão</a></li>
+          <li><a href="#stylesheets" title="Modified stylesheets">&rsaquo; Lista de Elementos</a></li>
+          <li><a href="#accessibility" title="Improved accessibility">&rsaquo; Autor</a></li>
+        </ul>
+      </div>
 
+     
 
-map.on('click', onMapClick);
+      <div class="lighterBackground">
+        <p class="sideBarTitle">Alternative stylesheet</p>
+        <span class="sideBarText">
+          Sinorca contains an alternative stylesheet that renders this side bar differently.
+        </span>
+        <span class="sideBarText">
+          To view the alternative stylesheet in (certain)
+          <span class="titleTip" title="eg: Mozilla, Camino, Netscape 6+">Gecko-based browsers</span>,
+          select <em>Sinorca (alternative)</em> from the <em>View</em> &rsaquo; <em>Use Style</em>
+          submenu.
+        </span>
+      </div>
+    
+      <div>
+        <p class="sideBarTitle">Validation</p>
+        <span class="sideBarText">
+          Validate the <a href="http://validator.w3.org/check/referer">XHTML</a> and
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> of this page.
+        </span>
+      </div>
+    </div>
 
-</script>
+    <!-- ##### Main Copy ##### -->
 
+    <div id="main-copy">
+      <h1 id="introduction">Introduction</h1>
+      <p>Bem-vindo ao Mapa Interativo da História de Itaperuna: A Terra da Promissão!<br> <br>Este site é dedicado à exploração visual e interativa dos elementos históricos apresentados no livro "A Terra da Promissão: História de Itaperuna", escrito por Major Porphirio Henriques e lançado em 1956. Nosso objetivo é proporcionar uma experiência única, conectando leitores, estudantes e entusiastas à rica narrativa histórica desta cidade vibrante.</p>
 
+      <p>O que é o Mapa Interativo?<br>
+		O Mapa Interativo é uma ferramenta dinâmica que oferece uma representação visual dos locais históricos mencionados no livro. Ao navegar pela nossa plataforma, você terá a oportunidade de explorar fazendas, praças, igrejas, aeroportos, rodoviárias, indústrias, prédios públicos, monumentos, pontes, estações de trem e transporte, todos fundamentais na construção da história de Itaperuna.</p>
 
-</body>
+      <p>Objetivos do Mapa:<br>
+
+    Contextualização Histórica: Proporcionar aos usuários uma compreensão visual e geográfica dos eventos e lugares descritos no livro.<br>
+    Preservação do Patrimônio: Destacar a importância de preservar e celebrar os marcos históricos que moldaram a identidade de Itaperuna como município.<br>
+    Facilitar a Exploração Literária: Oferecer aos leitores uma ferramenta que amplie sua experiência de leitura, permitindo uma conexão mais profunda com os locais mencionados na obra de Porphirio Henriques.</p>
+
+      <a class="topOfPage" href="#top" title="Go to the top of this page">^ TOP</a>
+
+      <h1 id="cross-browser">Objetivos do Mapa</h1>
+      <p>Contextualização Histórica: Proporcionar aos usuários uma compreensão visual e geográfica dos eventos e lugares descritos no livro.<br>  Preservação do Patrimônio: Destacar a importância de preservar e celebrar os marcos históricos que moldaram a identidade de Itaperuna como município.<br> Facilitar a Exploração Literária: Oferecer aos leitores uma ferramenta que amplie sua experiência de leitura, permitindo uma conexão mais profunda com os locais mencionados na obra de Porphirio Henriques.</p>
+      
+     
+
+      <a class="topOfPage" href="#top" title="Go to the top of this page">^ TOP</a>
+
+      <h1 id="stylesheets">Resultados Esperados:</h1>
+      <p>Esperamos que este mapa interativo inspire um diálogo mais profundo sobre a história de Itaperuna, promovendo o entendimento da evolução do município ao longo do tempo. Além disso, almejamos estimular a preservação do patrimônio histórico local e incentivar futuras pesquisas e explorações.<br
+		Explore, descubra e mergulhe na rica tapeçaria histórica de Itaperuna por meio deste Mapa Interativo. Junte-se a nós na jornada de descoberta, conectando passado e presente enquanto celebramos a Terra da Promissão!</p>
+         
+      <a class="topOfPage" href="#top" title="Go to the top of this page">^ TOP</a>
+
+     
+    </div>
+    
+    <!-- ##### Footer ##### -->
+
+    <div id="footer">
+      
+
+      <br class="doNotDisplay doNotPrint" />
+
+      <div class="right">
+        This design is (almost) public domain.<br />
+        
+    </a>
+	<!--This theme is free for distriubtion,  so long as  link to openwebdesing.org and florida-villa.com  stay on the theme-->
+	Courtesy <a href="http://www.openwebdesign.org" target="_blank">Open Web 
+    Design</a><a href="http://www.dubaiapartments.biz" target="_blank"><img src="spacer.gif" width="5" height="5" border="0"/></a>Thanks 
+    to <a href="http://www.florida-villa.com" target="_blank">Florida Vacation Homes</a> </div>
+    </div>
+  </body>
 </html>
